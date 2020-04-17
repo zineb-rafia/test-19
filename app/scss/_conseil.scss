@@ -3,64 +3,61 @@
 @import "base";
 
 
-
-.main__conseil {
-    background-color: white;
-    color:  $bleu-color;
+.main-conseil {
+  background-color: white;
+  color:  $bleu-color;
+  .main_width{
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      padding: 20px 0px;
+      color:  $bleu-color;
+      @media(max-width:375px and 768px){
+          font-size: 18px;
+          font-weight: bold;
+          max-width: 300px;
+      }
+  }
+  .main-items {
+      display: flex;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: space-between;
+  }
 }
-    .main__conseil__title{
-        max-width: 580px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 30px;
-        padding: 20px 0px;
-        color:  $bleu-color;
-        @media(max-width:375px and 768px){
-            font-size: 18px;
-            font-weight: bold;
-            max-width: 300px;
-        }
-    }
-.main__conseil__protections {
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-   
-        width: 40.33333%;
-        min-width: 330px;
-        margin: 20px auto;
-        @media (max-width: 767px) {
-          width: 45%;
-          min-width: 170px;
-        }
-      
-}
- 
-  
-
-
 .img-container {
-    height: 120px;
+  height: 120px;
+  @media (max-width: 767px) {
+    height: 90px;
+  }
+  img {
     @media (max-width: 767px) {
-      height: 90px;
+      width: 25%;
     }
-    img {
-      @media (max-width: 767px) {
-        width: 25%;
-      }
-      @media (max-width: 420px) {
-        width: 50%;
-      }
+    @media (max-width: 420px) {
+      width: 50%;
     }
   }
-  .img-container-para {
-    padding: 20px 10px;
-    color: $bleu-color;
-    font-size: 20px;
-    font-weight: 700;
+}
+
+.figure {
+  width: 33.33333%;
+  min-width: 320px;
+  margin: 20px auto;
+  @media (max-width: 767px) {
+    width: 45%;
+    min-width: 170px;
   }
+}
+
+.entite{
+  padding: 20px 10px;
+  color: $bleu-color;
+  font-size: 20px;
+  font-weight: 600;
+}
     // information
 .information {
     background-color: $bagrwd2-info;
@@ -151,7 +148,7 @@
         justify-content: space-between;
         max-width: 900px;
     }
-    .caption2 {
+    .entite2{
         padding: 20px 10px;
         color: $bleu-color;
         font-size: 20px;
